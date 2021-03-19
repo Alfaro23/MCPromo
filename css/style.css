@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #010202;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header{
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user__logo{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.user__image{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.app{
+    background: linear-gradient(90deg, #010202 0%, #010202 45% , rgba(1, 2, 2, 0.2) 90.9%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.main{
+    width: 90%;
+    height: calc(100% - 142px);
+    max-width: 1150px;
+    margin: auto;
+}
+.description__text{
+    max-width: 460px;
+}
+.preview{
+    margin-top: 145px;
+    margin-bottom: 18px;
+}
+.tags{
+    margin-bottom: 9px;
+    color: #E5E5E5;
+    font-size: 16px;
+    line-height: 140%;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tags__genre{
+    margin: 0 15px;
+}
+.tags__country{
+    margin-right: 15px;
+}
+.tags__age{
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+.description{
+    margin-bottom: 36px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+}
+.button{
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    cursor: pointer;
+}
+.buttons__buy{
+    background: #EA6E20;
+    margin-right: 15px;
+}
+.buttons__watch{
+    background: #2F2F2F;
+}
+.buttons__text{
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+.subcribe__input{
+    border: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .app{
+       height: auto;
+       padding-bottom: 500px;
+       background: url("../img/cover-image.jpg") no-repeat;
+       padding-bottom: 700px;
+       background-size: 500px;
+       background-position: bottom center;
+    }
+    video{
+        display: none;
+    }
+    .preview{
+        margin-top: 0px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .description__text{
+        max-width: 333px;
+    }
+    .preview__logo{
+        max-width: 100%;
+    }
+}
+@media (max-width: 576px){
+    .buttons__text{
+        display: none;
+    }
+    .user__logo{
+        display: none;
+    }
+    .app{
+        padding-bottom: 400px;
+        background-size: 300px;
+     }
+}
